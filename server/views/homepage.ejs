@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Appointment Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .caretaker-info {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .btn-book {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-book:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #dcdcdc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">Pet Care Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <h2>Welcome to Our Pet Appointment Booking Service</h2>
+                <p>Book an appointment for your beloved pet with our experienced and caring team of veterinarians. We
+                    ensure top-notch care and attention for your furry friends.</p>
+                <p>Our team consists of passionate pet lovers who are dedicated to providing the best possible care
+                    for your pets.</p>
+                <p>Feel free to book an appointment today!</p>
+                <a href="/contact-me" class="btn btn-primary mb-3">Book Now</a>
+            </div>
+            <div class="col-md-6">
+                <img src="/photos/book-appointments.PNG" class="img-fluid rounded" alt="Pet Caretaker">
+            </div>
+        </div>
+        <hr>
+        <h2 id="caretakers">Meet Our Pet Caretakers</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/photos/meet-caretaker.PNG" class="card-img-top" alt="Pet Caretaker">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Emily Smith</h5>
+                        <p class="caretaker-info">Lead Veterinarian</p>
+                        <p class="caretaker-info">20+ years of experience</p>
+                        <p class="caretaker-info">Specialized in small animals</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more caretaker cards if needed -->
+        </div>
+        <hr>
+        <h2 id="booking">Book a Pet Appointment</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Pet Appointment Card -->
+            <div class="col">
+                <div class="card">
+                    <img src="/photos/booknow.webp" class="card-img-top" alt="Pet Appointment">
+                    <div class="card-body">
+                        <h5 class="card-title">Schedule a Pet Appointment</h5>
+                        <p class="card-text">Schedule an appointment for your pet with our experienced veterinarians.</p>
+                        <a href="/contact-me" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more appointment cards if needed -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Pet Care Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
